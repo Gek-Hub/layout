@@ -1,37 +1,38 @@
-import './styles/App.css';
+import './styles/styles.css';
 
 function App() {
   return (
     <div className="App">
-      <div className='App-header'>
-        <div className='panel-top'>
-          <div>
-            <img src='./image/icon/logo.png' alt='logo'/>
-          </div>
-          <div>
-            <div>
-              <img src='./image/icon/store.png' alt='store'/>
-              Колоды
+      
+      <div className='header'>
+        <header>
+          <div className='panel-top'>
+            <div className='logo'>
             </div>
-            <div>
-              <img src='./image/icon/favorites.png' alt='favorites'/>
-              Рейтинг
-            </div>
+            <div className='deck-rating'>
+              <div>
+                <img src='./image/icon/store.png' alt='store'/>
+                Колоды
+              </div>
+              <div>
+                <img src='./image/icon/favorites.png' alt='favorites'/>
+                Рейтинг
+              </div>
 
+            </div>
+            <div className="languages">
+              <select>
+                <option>ru</option>
+                <option>en</option>
+              </select>
+            </div>
+            <div className="accounts">
+              <select>
+                <option>Pal Palich</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <select>
-              <option>ru</option>
-              <option>en</option>
-            </select>
-          </div>
-          <div>
-            <select>
-              <option>Pal Palich</option>
-            </select>
-          </div>
-        </div>
-        
+        </header>
         <div className="wellcome">
           <div>
             <p>Welcome to the service for memorizing words in foreign languages using flashcards</p>
@@ -44,10 +45,8 @@ function App() {
           </div>
         </div>
 
-        <div className="App-image">
-          <img src="./image/woman.svg" alt='woman'/>
-        </div>
-
+      </div>
+      <div className="App-image">
       </div>
     </div>
   );

@@ -3,31 +3,27 @@ import './styles/styles.css';
 function App() {
   return (
     <div className="App">
-      
+      <div className="App-image"/>
       <div className='header'>
         <header>
           <div className='panel-top'>
             <div className='logo'>
             </div>
-            <div className='deck-rating'>
-              <div>
-                <img src='./image/icon/store.png' alt='store'/>
-                Колоды
-              </div>
-              <div>
-                <img src='./image/icon/favorites.png' alt='favorites'/>
-                Рейтинг
-              </div>
-
+            <div className='deck-rating'> 
+              Колоды Рейтинг
             </div>
-            <div className="languages">
-              <select>
+            <div className='deck-icon'/>
+            <div className='rating-icon'/>
+             
+            
+            <div > 
+              <select className='select-languages'>
                 <option>ru</option>
                 <option>en</option>
               </select>
             </div>
-            <div className="accounts">
-              <select>
+            <div>
+              <select className="select-accounts">
                 <option>Pal Palich</option>
               </select>
             </div>
@@ -37,17 +33,14 @@ function App() {
           <div>
             <p>Welcome to the service for memorizing words in foreign languages using flashcards</p>
           </div>
-          <div>
-            <img src="image/china.png" alt="translate-icon" />
-          </div>
+          <div className='translate-icon'/>
           <div>
             <button className="btn-getStart" >Get started</button>
           </div>
         </div>
 
       </div>
-      <div className="App-image">
-      </div>
+      
     </div>
   );
 }

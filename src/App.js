@@ -1,54 +1,47 @@
-import './styles/App.css';
+import './styles/styles.css';
 
 function App() {
   return (
     <div className="App">
-      <div className='App-header'>
-        <div className='panel-top'>
-          <div>
-            <img src='./image/icon/logo.png' alt='logo'/>
-          </div>
-          <div>
-            <div>
-              <img src='./image/icon/store.png' alt='store'/>
-              Колоды
+      <div className="App-bg"/>
+      <div className="App-image"/>
+      <div className='header'>
+        <header>
+          <div className='panel-top'>
+            <div className='logo'>
             </div>
-            <div>
-              <img src='./image/icon/favorites.png' alt='favorites'/>
-              Рейтинг
+            <div className='deck-rating'> 
+            <div className='deck-icon'/>
+              Колоды 
+            <div className='rating-icon'/>
+             Рейтинг
             </div>
-
+             
+            
+            <div className='panel-top'> 
+              <select className='select-languages'>
+                <option>ru</option>
+                <option>en</option>
+              </select>
+            </div>
+            <div className='panel-top'>
+              <select className="select-accounts">
+                <option>Pal Palich</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <select>
-              <option>ru</option>
-              <option>en</option>
-            </select>
-          </div>
-          <div>
-            <select>
-              <option>Pal Palich</option>
-            </select>
-          </div>
-        </div>
-        
+        </header>
         <div className="wellcome">
           <div>
             <p>Welcome to the service for memorizing words in foreign languages using flashcards</p>
           </div>
-          <div>
-            <img src="image/china.png" alt="translate-icon" />
-          </div>
+          <div className='translate-icon'/>
           <div>
             <button className="btn-getStart" >Get started</button>
           </div>
         </div>
-
-        <div className="App-image">
-          <img src="./image/woman.svg" alt='woman'/>
-        </div>
-
       </div>
+      
     </div>
   );
 }

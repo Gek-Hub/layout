@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    color: white;
+    background: rgb(22, 23, 25);
+}
+.panel-top {
+    position: fixed;
+    display: flex;
+    height: 90px;
+    width: 100vw;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    width: 46px;
+    height: 32px;
+    left: 8.5vw;
+
+    background: url(../../images/icon/logo.png);
+}
+.deck-rating {
+    display:flex;
+    position: absolute;
+    height: 19.83px;
+    left: 18vw;
+    flex-direction: row;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+
+}
+.deck-icon {
+    
+    width: 24px;
+    height: 21.91px;
+    /* font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px; */
+    background: url(../../images/icon/store.png);
+}
+.rating-icon {  
+    width: 21px;
+    height: 19px;
+    margin-left: 20px;
+
+    /* font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px; */
+    background: url(../../images/icon/favorites.png);
+}
+.select-languages {
+    position: absolute;
+    width: 71px;
+    height: 33px;
+    left: 72vw;
+    background: #3C3D3F;
+    border-radius: 8px;
+
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+.select-accounts {
+    position: absolute;
+    width: 249px;
+    height: 43px;
+    left: 78vw;
+
+    background: #0D6EFD;
+    border-radius: 27px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: white;
+}

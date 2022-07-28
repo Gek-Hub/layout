@@ -3,6 +3,7 @@ import './styles/styles.css';
 function App() {
   return (
     <div className="App">
+      <div className="App-bg"/>
       <div className="App-image"/>
       <div className='header'>
         <header>
@@ -10,19 +11,20 @@ function App() {
             <div className='logo'>
             </div>
             <div className='deck-rating'> 
-              Колоды Рейтинг
-            </div>
             <div className='deck-icon'/>
+              Колоды 
             <div className='rating-icon'/>
+             Рейтинг
+            </div>
              
             
-            <div > 
+            <div className='panel-top'> 
               <select className='select-languages'>
                 <option>ru</option>
                 <option>en</option>
               </select>
             </div>
-            <div>
+            <div className='panel-top'>
               <select className="select-accounts">
                 <option>Pal Palich</option>
               </select>
@@ -38,7 +40,6 @@ function App() {
             <button className="btn-getStart" >Get started</button>
           </div>
         </div>
-
       </div>
       
     </div>

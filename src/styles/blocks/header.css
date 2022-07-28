@@ -1,33 +1,30 @@
 .header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
     background: rgb(22, 23, 25);
 }
 .panel-top {
+    position: fixed;
     display: flex;
     height: 90px;
     width: 100vw;
+    align-items: center;
 }
 .logo {
     position: absolute;
     width: 46px;
     height: 32px;
     left: 8.5vw;
-    top: 63px;
 
     background: url(../../images/icon/logo.png);
 }
 .deck-rating {
+    display:flex;
     position: absolute;
-    width: 257px;
     height: 19.83px;
-    left: 343px;
-    top: 68px;
-    text-align: justify;
+    left: 18vw;
+    flex-direction: row;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -38,39 +35,32 @@
 }
 .deck-icon {
     
-    position: absolute;
     width: 24px;
     height: 21.91px;
-    left: 319px;
-    top: 69.04px;
-
-    font-family: 'Font Awesome 5 Free';
+    /* font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 21px; */
     background: url(../../images/icon/store.png);
 }
-.rating-icon {
-    position: absolute;
+.rating-icon {  
     width: 21px;
     height: 19px;
-    left: 434px;
-    top: 71.09px;
+    margin-left: 20px;
 
-    font-family: 'Font Awesome 5 Free';
+    /* font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 21px; */
     background: url(../../images/icon/favorites.png);
 }
 .select-languages {
     position: absolute;
     width: 71px;
     height: 33px;
-    left: 1384px;
-    top: 62px;
+    left: 72vw;
     background: #3C3D3F;
     border-radius: 8px;
 
@@ -86,8 +76,7 @@
     position: absolute;
     width: 249px;
     height: 43px;
-    left: 1490px;
-    top: 57px;
+    left: 78vw;
 
     background: #0D6EFD;
     border-radius: 27px;

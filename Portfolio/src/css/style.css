@@ -1,0 +1,18 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  width: 290px;
+  height: 290px;
+  background-color: #bbb;
+  border-radius: 40px;
+  box-shadow: 0px 1px 2px 2px gray;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+.block__text {
+  color: orange;
+}/*# sourceMappingURL=style.css.map */

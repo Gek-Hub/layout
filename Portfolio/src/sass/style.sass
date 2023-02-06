@@ -1,22 +1,342 @@
 @import url(./normalize.css)
 @import url(./reset.css)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap')
+$main-orange: #FF772B
+$main-purple: #AD6DFF
+$main-gray: #323232
 
-$main-color: orange
-@mixin box
-  width: 290px
-  height: 290px
-  background-color: #bbb 
-  border-radius: 40px
-  box-shadow: 0px 1px 2px 2px gray
-
-* 
+*
   box-sizing: border-box
+a
+  text-decoration: none
+  color: black
+  
+.container
+  max-width: 1140px
+  margin: 0 auto 
 
-.block
-  @include box
-  padding: 10px 10px
-  margin: 0 auto
-  &__text 
-    color: $main-color
+.main-section
+  position: relative
+  height: 800px
+  background: #f0f0f0
+  padding-top: 13px
+  overflow: hidden
+  &__nav-container
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+  &__header
+    display: flex
+    img
+      height: 75px
+      opacity: 0.8
+  &__nav
+    display: flex
+    align-items: center
+    position: relative
+    z-index: 1
+  &__guitarist
+    margin-right: -60px
+    align-self: end
+  &__guitarist-photo
+    position: relative
+    height: 658px
+  &__figures
+    position: relative
+  &__content
+    display: flex
+    flex-direction: row
+    height: 710px
+  &__info
+    align-self: center
+  &__text
+    margin-bottom: 20px
+  &__first-elipse
+    position: absolute
+    right: 0px
+    top: -120px
+  &__second-elipse
+    position: absolute
+    right: -120px
+    bottom: -120px
+
+  
+    
+
+.nav-menu
+  &__list
+    display: flex
+    flex-direction: row
+  &__item
+    font-family: Montserrat, sans-serif
+    font-weight: 600
+    margin-right: 90px
+    &:last-children
+      margin-right: 0    
+
+.figure-
+  &3
+    position: absolute
+    width: 546.74px
+    height: 180.84px
+    left: 80px
+    top: 165px
+    background: $main-orange
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 100px
+    transform: rotate(-30deg)
+  &2
+    position: absolute
+    width: 544.64px
+    height: 181.55px
+    left: 50px
+    top: 125px
+    background: $main-purple
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.15)
+    border-radius: 100px
+    transform: rotate(-45deg)
+  &1
+    position: absolute
+    width: 542.53px
+    height: 182.25px
+    left: 20px
+    top: 90px
+    background: $main-gray
+    opacity: 0.7
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 100px
+    transform: rotate(-60deg)
+  
+.icons
+  position: relative
+  z-index: 1
+  display: inline-flex
+  &__item
+    margin-right: 20px
+    width: 40px
+    &:last-child
+      margin: 0
+    
+.title
+  font-size: 78px
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  hr
+    width: 80px
+    margin: 0
+    border: 1px solid black
+.text
+  font: 400 20px Montserrat 
+.buttons
+  display: flex
+  flex-direction: row
+  .button
+    margin-right: 39px
+    width: 254px
+    height: 65px
+    background: $main-orange
+    border-radius: 100px
+    border: 0
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25)
+    &::hover
+      cursor: pointer
+    p
+      color: white
+      font: 600 20px Montserrat 
+      text-align: center
+  .chat
+    display: flex
+    align-items: center
+    &__icon
+      height: 58px
+      margin-right: 10px
+    p
+      font: 18px Montserrat
+
+.elipse
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 240px
+  height: 240px
+  border-radius: 50%
+  
+  background: linear-gradient(327.29deg, $main-orange 7.09%, #001EBC 83.25%)
+  opacity: 0.5
+  &__subtract
+    width: 170px
+    height: 170px
+    border-radius: 50%
+    background: #f0f0f0
+  
+.big
+  zoom: 1.2
+.small
+  zoom: 0.8
+
+.introduce-section
+  overflow: hidden
+  position: relative
+  min-height: 700px
+  background: white
+  padding-top: 30px
+  &__title
+    margin-bottom: 37px
+  &__about
+    position: relative
+    display: flex
+    flex-direction: row
+    margin-bottom: 60px
+    justify-content: space-between
+    
+  
+  &__third-elipse
+    bottom: -120px
+    left: -120px
+    transform: rotate(-90deg)
+  &__fourth-elipse
+    top: -120px
+    right: -75px
+    transform: rotate(90deg)
+
+  
+
+.about-block
+  position: relative
+  z-index: 1
+  border-radius: 58px
+  width: 360px
+  height: 338px
+  overflow: hidden
+  padding: 20px 0 0 20px
+  opacity: 0.9
+  box-shadow: 0 5px 6px gray
+  &_orange
+    background: $main-orange
+  &_purple
+    background: $main-purple
+  &_gray
+    background: $main-gray
+  img
+    zoom: 0.5
+  h3
+    display: inline-block
+    height: 100%
+    width: 100%
+    position: absolute
+    left: 50%
+    top: 0px
+    color: white
+    font: 600 40px Montserrat 
+    text-align: center
+    transform: rotate(-90deg)
+.exp
+  
+  display: flex
+  justify-content: space-evenly
+  &__block
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: row
+    align-items: center
+    img
+      margin-right: 20px
+  &__text
+    font: 700 16px Montserrat
+    span
+      font-size: 36px
+    
+.third-section
+  position: relative
+  background-color: #CECCCC
+  overflow: hidden
+  &__sixth-elipse
+    top: -120px
+    right: -120px
+  &__container
+    min-height: 700px
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__title-block
+    width: 50%
+    position: relative
+    display: flex
+    justify-content: center
+  &__title
+    position: relative
+    z-index: 1  
+  &__info-block
+    width: 50%
+  &__info-title
+    margin-bottom: 50px
+  &__fiveth-elipse
+    position: absolute
+    left: -100px
+    top: 20px
+    .elipse__subtract
+      background: #CECCCC
+  &__circle
+    position: absolute
+    left: 0px
+    bottom: 0px
+
+  &__text
+    margin-bottom: 80px
+
+
+  
+footer
+  height: 250px
+  position: relative
+  .grif
+    position: absolute
+    left: 0px
+    bottom: 0
+    height: 350px
+  .container
+    display: flex
+    justify-content: right
+    align-items: center
+    height: 100%
+
+    .content
+      display: flex
+      flex-direction: column
+      h2
+        font-size: 64px
+        margin-bottom: 10px
+      
+@media  ( max-width: 1199px )
+  .container
+    width: 960px
+  .main-section
+    &__guitarist-photo
+      position: relative
+      width: 676px
+    &__figures
+      position: relative
+      left: -100px
+    &__guitarist
+      margin-right: -130px
+    .button 
+      margin-right: 24px
+      width: 225px
+  
+  
+@media  ( max-width: 991px )
+  .container
+    width: 720px
+
+@media  ( max-width: 767 )
+  .container
+    width: 540px
+
+  @media  ( max-width: 548px )
+  .container
+    width: 100%
 
 

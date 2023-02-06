@@ -1,18 +1,402 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
 
-.block {
-  width: 290px;
-  height: 290px;
-  background-color: #bbb;
-  border-radius: 40px;
-  box-shadow: 0px 1px 2px 2px gray;
-  padding: 10px 10px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1140px;
   margin: 0 auto;
 }
-.block__text {
-  color: orange;
+
+.main-section {
+  position: relative;
+  height: 800px;
+  background: #f0f0f0;
+  padding-top: 13px;
+  overflow: hidden;
+}
+.main-section__nav-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.main-section__header {
+  display: flex;
+}
+.main-section__header img {
+  height: 75px;
+  opacity: 0.8;
+}
+.main-section__nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.main-section__guitarist {
+  margin-right: -60px;
+  align-self: end;
+}
+.main-section__guitarist-photo {
+  position: relative;
+  height: 658px;
+}
+.main-section__figures {
+  position: relative;
+}
+.main-section__content {
+  display: flex;
+  flex-direction: row;
+  height: 710px;
+}
+.main-section__info {
+  align-self: center;
+}
+.main-section__text {
+  margin-bottom: 20px;
+}
+.main-section__first-elipse {
+  position: absolute;
+  right: 0px;
+  top: -120px;
+}
+.main-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+.nav-menu__item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  margin-right: 90px;
+}
+.nav-menu__item:last-children {
+  margin-right: 0;
+}
+
+.figure-3 {
+  position: absolute;
+  width: 546.74px;
+  height: 180.84px;
+  left: 80px;
+  top: 165px;
+  background: #FF772B;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  transform: rotate(-30deg);
+}
+.figure-2 {
+  position: absolute;
+  width: 544.64px;
+  height: 181.55px;
+  left: 50px;
+  top: 125px;
+  background: #AD6DFF;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  transform: rotate(-45deg);
+}
+.figure-1 {
+  position: absolute;
+  width: 542.53px;
+  height: 182.25px;
+  left: 20px;
+  top: 90px;
+  background: #323232;
+  opacity: 0.7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  transform: rotate(-60deg);
+}
+
+.icons {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+}
+.icons__item {
+  margin-right: 20px;
+  width: 40px;
+}
+.icons__item:last-child {
+  margin: 0;
+}
+
+.title {
+  font-size: 78px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.title hr {
+  width: 80px;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.text {
+  font: 400 20px Montserrat;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons .button {
+  margin-right: 39px;
+  width: 254px;
+  height: 65px;
+  background: #FF772B;
+  border-radius: 100px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.buttons .button::hover {
+  cursor: pointer;
+}
+.buttons .button p {
+  color: white;
+  font: 600 20px Montserrat;
+  text-align: center;
+}
+.buttons .chat {
+  display: flex;
+  align-items: center;
+}
+.buttons .chat__icon {
+  height: 58px;
+  margin-right: 10px;
+}
+.buttons .chat p {
+  font: 18px Montserrat;
+}
+
+.elipse {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: linear-gradient(327.29deg, #FF772B 7.09%, #001EBC 83.25%);
+  opacity: 0.5;
+}
+.elipse__subtract {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+.big {
+  zoom: 1.2;
+}
+
+.small {
+  zoom: 0.8;
+}
+
+.introduce-section {
+  overflow: hidden;
+  position: relative;
+  min-height: 700px;
+  background: white;
+  padding-top: 30px;
+}
+.introduce-section__title {
+  margin-bottom: 37px;
+}
+.introduce-section__about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+.introduce-section__third-elipse {
+  bottom: -120px;
+  left: -120px;
+  transform: rotate(-90deg);
+}
+.introduce-section__fourth-elipse {
+  top: -120px;
+  right: -75px;
+  transform: rotate(90deg);
+}
+
+.about-block {
+  position: relative;
+  z-index: 1;
+  border-radius: 58px;
+  width: 360px;
+  height: 338px;
+  overflow: hidden;
+  padding: 20px 0 0 20px;
+  opacity: 0.9;
+  box-shadow: 0 5px 6px gray;
+}
+.about-block_orange {
+  background: #FF772B;
+}
+.about-block_purple {
+  background: #AD6DFF;
+}
+.about-block_gray {
+  background: #323232;
+}
+.about-block img {
+  zoom: 0.5;
+}
+.about-block h3 {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  color: white;
+  font: 600 40px Montserrat;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+
+.exp {
+  display: flex;
+  justify-content: space-evenly;
+}
+.exp__block {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.exp__block img {
+  margin-right: 20px;
+}
+.exp__text {
+  font: 700 16px Montserrat;
+}
+.exp__text span {
+  font-size: 36px;
+}
+
+.third-section {
+  position: relative;
+  background-color: #CECCCC;
+  overflow: hidden;
+}
+.third-section__sixth-elipse {
+  top: -120px;
+  right: -120px;
+}
+.third-section__container {
+  min-height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.third-section__title-block {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.third-section__title {
+  position: relative;
+  z-index: 1;
+}
+.third-section__info-block {
+  width: 50%;
+}
+.third-section__info-title {
+  margin-bottom: 50px;
+}
+.third-section__fiveth-elipse {
+  position: absolute;
+  left: -100px;
+  top: 20px;
+}
+.third-section__fiveth-elipse .elipse__subtract {
+  background: #CECCCC;
+}
+.third-section__circle {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.third-section__text {
+  margin-bottom: 80px;
+}
+
+footer {
+  height: 250px;
+  position: relative;
+}
+footer .grif {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 350px;
+}
+footer .container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+footer .container .content {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .content h2 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .main-section__guitarist-photo {
+    position: relative;
+    width: 676px;
+  }
+  .main-section__figures {
+    position: relative;
+    left: -100px;
+  }
+  .main-section__guitarist {
+    margin-right: -130px;
+  }
+  .main-section .button {
+    margin-right: 24px;
+    width: 225px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767) {
+  .container {
+    width: 540px;
+  }
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

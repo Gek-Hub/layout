@@ -4,10 +4,376 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио гитариста</title>
+    <title>Репетитор - игра на гитаре</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/style.css" />
+    <meta
+      name="description"
+      content="лучший репетитор игры на гитаре в казани"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf3ef69dff.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header></header>
+    <!-- Первая секция -->
+    <div class="main-section">
+      <div class="container main-section__nav-container">
+        <!-- кружочек -->
+        <div class="main-section__first-elipse elipse">
+          <div class="elipse__subtract"></div>
+        </div>
+        <!-- навигационное меню -->
+        <header class="main-section__header">
+          <a href="#"><img src="./img/logo.svg" alt="логотип" /></a>
+        </header>
+        <nav class="main-section__nav nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="#about-me">Обо мне</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#lessons">Занятия</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#">Запись</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- часть с контентом -->
+      <div class="container main-section__content">
+        <!-- левая часть с гитаристом -->
+        <div class="main-section__guitarist">
+          <div class="main-section__figures">
+            <div class="figure-1"></div>
+            <div class="figure-2"></div>
+            <div class="figure-3"></div>
+          </div>
+          <img
+            class="main-section__guitarist-photo"
+            src="./img/photo-gitarist.png"
+            alt="фото гитариста"
+          />
+        </div>
+        <!-- правая часть с инфой -->
+        <div class="main-section__info">
+          <!-- кружочек -->
+          <div class="main-section__second-elipse elipse big">
+            <div class="elipse__subtract"></div>
+          </div>
+          <!-- иконки -->
+          <div class="main-section__icons icons">
+            <div class="icons__item">
+              <a href="https://vk.com/iamgek"
+                ><img src="./icon/vk.svg" alt="vk"
+              /></a>
+            </div>
+            <div class="icons__item">
+              <a href="https://t.me/GekPlease" target="_blank"
+                ><img src="./icon/telegram.svg" alt="telegram"
+              /></a>
+            </div>
+            <div class="icons__item">
+              <a
+                href="https://www.instagram.com/anatoliytsoy_official/"
+                target="_blank"
+              >
+                <img src="./icon/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+            <div class="icons__item">
+              <a href="https://wa.me/qr/IE5I47MAQFQCF1" target="_blank">
+                <img src="./icon/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+          <!-- заголовок -->
+          <h1 class="main-section__title title">
+            Серёга
+            <hr />
+          </h1>
+          <!-- текст -->
+          <p class="text main-section__text">
+            Готовлю молодых людей от 12 лет игре на гитаре уже 12 лет.
+          </p>
+          <!-- кнопки -->
+          <div class="main-section__buttons buttons">
+            <button class="button">
+              <p>
+                Забронировать <br />
+                урок
+              </p>
+            </button>
+            <div class="main-section__chat chat">
+              <img
+                class="chat__icon"
+                src="./icon/chat-icon.png"
+                alt="иконка чата"
+              />
+              <p>
+                Есть <br />
+                вопросы?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  /первая секция -->
+    </div>
+    <!-- вторая секция -->
+    <div id="about-me" class="introduce-section">
+      <div class="introduce-section__container container">
+        <!-- обучает -->
+        <h2 class="title introduce-section__title">
+          Обучаю
+          <hr />
+        </h2>
+        <!-- блоки с навыками -->
+        <div class="introduce-section__about">
+          <div
+            class="introduce-section__about-block about-block about-block_orange"
+          >
+            <img src="./img/electro-guitar.png" alt="Электро" />
+            <h3>
+              Электро <br />
+              гитара
+            </h3>
+          </div>
+          <div
+            class="introduce-section__about-block about-block about-block_purple"
+          >
+            <img src="./img/ukulelly-guitar.png" alt="Укулелли" />
+            <h3>
+              Укулелли <br />
+              гитара
+            </h3>
+          </div>
+          <div
+            class="introduce-section__about-block about-block about-block_gray"
+          >
+            <img src="./img/acustic-guitar.png" alt="Акустика" />
+            <h3>
+              Акустическая <br />
+              гитара
+            </h3>
+          </div>
+          <!-- circles -->
+          <div class="introduce-section__third-elipse elipse">
+            <div class="elipse__subtract"></div>
+          </div>
+          <div class="introduce-section__fourth-elipse elipse small">
+            <div class="elipse__subtract"></div>
+          </div>
+        </div>
+        <!-- блок с опытом -->
+        <div class="introduce-section__exp exp">
+          <div class="exp__block">
+            <img src="./icon/01_icon_second-section.png" alt="кубок" />
+            <h3 class="exp__text">
+              <span>7</span> <br />
+              лет<br />
+              преподавания
+            </h3>
+          </div>
+          <div class="exp__block">
+            <img src="./icon/02_icon_second-section.png" alt="кубок" />
+            <h3 class="exp__text">
+              <span>2000</span> <br />
+              часов<br />
+              преподавания
+            </h3>
+          </div>
+          <div class="exp__block">
+            <img src="./icon/03_icon_second-section.png" alt="кубок" />
+            <h3 class="exp__text">
+              <span>314</span> <br />
+              студентов<br />
+              обучено
+            </h3>
+          </div>
+          <div class="exp__block">
+            <img src="./icon/04_icon_second-section.png" alt="кубок" />
+            <h3 class="exp__text">
+              <span>263</span> <br />
+              отзыва<br />
+              на 5 звезд
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- третья секция -->
+    <div id="lessons" class="third-section">
+      <div class="third-section__container container">
+        <div class="third-section__title-block">
+          <!-- circles -->
+          <div class="third-section__fiveth-elipse elipse big">
+            <div class="elipse__subtract"></div>
+          </div>
+          <div class="third-section__circle">
+            <img src="./icon/circle_third-section.svg" alt="circle" />
+          </div>
+          <h2 class="title third-section__title">
+            Обучение
+            <hr />
+          </h2>
+        </div>
+        <div class="third-section__info-block">
+          <h2 class="title third-section__info-title">
+            Готовлю
+            <hr />
+            виртуозов
+          </h2>
+          <p class="text third-section__text">
+            Проснувшись однажды утром после беспокойного сна, Грегор Замза
+            обнаружил, что он у себя в постели превратился в страшное насекомое.
+            Это не было сном. Его комната, настоящая, разве что слишком
+            маленькая, но обычная комната, мирно покоилась в своих четырех
+            хорошо знакомых стенах. Над столом, где были разложены распакованные
+            образцы сукон – Замза был коммивояжером, – висел портрет, который он
+            недавно вырезал из иллюстрированного журнала и вставил в красивую
+            золоченую рамку.
+          </p>
+          <div class="third-section__buttons buttons">
+            <button class="button">
+              <p>
+                Забронировать <br />
+                урок
+              </p>
+            </button>
+            <div class="main-section__chat chat">
+              <img
+                class="chat__icon"
+                src="./icon/chat-icon.png"
+                alt="иконка чата"
+              />
+              <p>
+                Есть <br />
+                вопросы?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-section__sixth-elipse elipse big">
+        <div class="elipse__subtract"></div>
+      </div>
+    </div>
+    <footer>
+      <img class="grif" src="./img/Grif.png" alt="" />
+      <div class="container">
+        <div class="content">
+          <h2 class="title third-section__title">
+            Запишись на<br />
+            <hr />
+
+            пробный урок
+          </h2>
+          <div class="icons">
+            <div class="icons__item">
+              <a href="https://vk.com/iamgek"
+                ><img src="./icon/vk.svg" alt="vk"
+              /></a>
+            </div>
+            <div class="icons__item">
+              <a href="https://t.me/GekPlease" target="_blank"
+                ><img src="./icon/telegram.svg" alt="telegram"
+              /></a>
+            </div>
+            <div class="icons__item">
+              <a
+                href="https://www.instagram.com/anatoliytsoy_official/"
+                target="_blank"
+              >
+                <img src="./icon/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+            <div class="icons__item">
+              <a href="https://wa.me/qr/IE5I47MAQFQCF1" target="_blank">
+                <img src="./icon/whatsapp.svg" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
